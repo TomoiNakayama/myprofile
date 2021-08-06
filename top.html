@@ -22,7 +22,7 @@
         <div class="right"><a href="profile.html">profile</a></div>
         <table border="0">
         <tr>
-        <tb><a class="official" href="official.html"><video class="v" poster="S__183607303.jpg" loop muted width="50%" ><source src="649944359.960346.mp4"></video></a><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        <tb><a class="official" href="official.html"><video class="v" poster="S__183607303.jpg" loop muted width="50%" ><source src="649944359.960346.mp4"></video></a><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script>
         $(document).on({
             mouseenter:function(){
                 $(this).addClass('on');
@@ -36,20 +36,21 @@
             }
         },'.official');
         </script></tb>
-                <tb><a class="private" href="private.html"><video class="v" poster="S__183607305.jpg" loop muted width="50%" ><source src="649944360.029410.mp4"></video></a><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-        $(document).on({
-            mouseenter:function(){
-                $(this).addClass('on');
-                $(this).find('.v')[0].currentTime = $(this).find('.v')[0].initialTime || 0;
-                $(this).find('.v')[0].play();
-            },
-            mouseleave:function(){
-                $(this).removeClass('on');
-                // $(this).find('.v')[0].pause();
-                $(this).find('.v')[0].load(); // <= !!
-            }
-        },'.private');
-        </script></tb>
+                <tb><a class="private" href="private.html"><video class="v" poster="S__183607305.jpg" loop muted width="50%" ><source src="649944360.029410.mp4"></video></a><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                <script>
+                $(document).on({
+                    mouseenter:function(){
+                        $(this).addClass('on');
+                        $(this).find('.v')[0].currentTime = $(this).find('.v')[0].initialTime || 0;
+                        $(this).find('.v')[0].play();
+                    },
+                    mouseleave:function(){
+                        $(this).removeClass('on');
+                        // $(this).find('.v')[0].pause();
+                        $(this).find('.v')[0].load(); // <= !!
+                    }
+                },'.private');
+                </script></tb>
         </tr>
        </table>
         
